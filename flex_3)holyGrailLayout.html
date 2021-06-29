@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border:1px solid gray;
+        }
+        header{
+            padding-left: 20px;
+            border-bottom:1px solid gray;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+            order:1;
+        }
+        aside{
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>짧은대본</h1>
+        </header>
+        <section class="content">
+            <main>
+                짧은 대본은 사랑입니다.
+            </main>
+            <nav>
+                <ul>
+                    <li>ena</li>
+                    <li>hyeonjea</li>
+                    <li>heagi</li>
+                </ul>
+            </nav>
+            <aside>
+                팬미팅
+            </aside>
+        </section>
+        <footer>
+            <a href="https://www.youtube.com/channel/UChgOgRNxrtCcVARDQT_c-Zg">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
